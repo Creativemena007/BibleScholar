@@ -18,9 +18,40 @@
 }
 
 .app-header p {
-  margin: 0.5rem 0 0 0;
+  margin: 0.5rem 0 1.5rem 0;
   font-size: 1.1rem;
   opacity: 0.9;
+}
+
+.app-nav {
+  display: flex;
+  gap: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 4px;
+}
+
+.app-nav button {
+  flex: 1;
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.app-nav button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.app-nav button.active {
+  background: white;
+  color: #2c5aa0;
+  font-weight: 600;
 }
 
 .app-main {
